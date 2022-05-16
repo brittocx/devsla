@@ -1,0 +1,77 @@
+/* VARIABLES */
+
+:root {
+  --header-color: #000000;
+  --h1-color: #393c41;
+  --h2-color: #6e7378;
+  --btn-dark-bg: rgba(23, 26, 32, 0.8);
+  --btn-light-bg: rgba(255, 255, 255, 0.65);
+  --btn-dark-color: #fff;
+  --btn-light-color: #000;
+}
+
+/* FONTS */
+@font-face {
+  font-family: GothamMedium;
+  src: url(../assets/fonts/GothamMedium.otf);
+}
+
+@font-face {
+  font-family: GothamBook;
+  src: url(../assets/fonts/GothamBookRegular.otf);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "GothamMedium", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* HEADER  */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+header .logo {
+  width: 120px;
+  margin-left: 20px;
+}
+
+header .right-side ul {
+  display: flex;
+}
+
+header .right-side li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+header .right-side a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--header-color);
+}
+
+main {
+  width: 100%;
+  display: flex;
+  height: calc(100vh - 64px);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content {
+  background-color: red;
+}
